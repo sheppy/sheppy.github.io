@@ -14,31 +14,29 @@
     <!-- endinject -->
 </head>
 <body>
-
     <nav class="offscreen-left">
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-    </nav>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</nav>
 
-    <main class="application offscreen-shift">
-        <h1 class="title">Main Page</h1>
+<main class="application offscreen-shift">
+    <h1 class="title">Main Page</h1>
+    <p>Click anywhere to toggle the nav</p>
+</main>
 
-        <p>Click anywhere to toggle the nav</p>
-    </main>
-
-    <script>
-        document.addEventListener("click", function () {
-            var body = document.body;
-            if (body.className) {
-                body.className = "";
-            } else {
-                body.className = "offscreen-left_active";
-            }
-        });
-    </script>
+<script>
+    document.addEventListener("click", function () {
+        var body = document.body;
+        if (body.className) {
+            body.className = "";
+        } else {
+            body.className = "offscreen-left_active";
+        }
+    });
+</script>
 
     <!-- vendor:js -->
     <!-- endinject -->
